@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hello, world!</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+
+  <!-- Font -->
+  <link href="@@vars.googleFont" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+  <link rel="stylesheet" href="../assets/css/docs.min.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="/documentation/Index2.html" aria-label="Unify">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+              <span class="badge bg-soft-primary text-primary">v3.2.2</span>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group-merge navbar-input-group" style="min-width: 20rem;">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control" placeholder="Search in docs"
+                      aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description"
+                        style="width: 7rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block text-muted mb-1"></span>
+                      <span class="component fw-bold text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <!-- <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul> -->
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end"
+      data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <div class="d-grid flex-grow-1 px-2">
+        <button type="button" class="navbar-toggler btn btn-white" data-bs-toggle="collapse"
+          data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false"
+          aria-controls="navbarVerticalNavMenu">
+          <span class="d-flex justify-content-between align-items-center">
+            <span class="h3 mb-0">Nav menu</span>
+
+            <span class="navbar-toggler-default">
+              <i class="bi-list"></i>
+            </span>
+
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </span>
+        </button>
+      </div>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="../documentation/index.html" aria-label="Unify">
+              <img class="navbar-brand-logo" src="../assets/img/160x160/WT-VACIO.png" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="../documentation/changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v3.2.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <!-- <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="../documentation/index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul> -->
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="../documentation/introduccion.html">Introduction</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/getting_started.html">Getting Started</a>
+            </li>
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">CRUDS</span>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/establecimientos.html">Establecimientos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/animales.html">Animales</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/lotes.html">Lotes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/mov_laborales.html">Movimientos Laborales</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/ingreso_animal.html">Aniamles Ingresos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/insumo_data.html">Insumo Data</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/operario.html">Operario</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/hacienda.html">Hacienda</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/labor.html">Labor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/maquinas.html">Maquinas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_combustibles.html">Movimientos Combustibles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/actividades.html">Actividades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/plan_de_gestion.html">Plan de Gestion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/act_lotes.html">ActLotes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_insumos.html">Movimientos Insumos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_equipos.html">Movimientos Equipos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/contrato_cereal.html">Contrato Cereal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dta.html">DTA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dta_haciendas.html">DTA Haciendas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/viajes.html">Viajes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/viajes_movimientos.html">Viajes Movimientos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/romaneos.html">Romaneos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/depositos.html">Depositos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/depositos_mov_transferencia.html">Deposito Mov. Transferencia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/rubro.html">Rubro</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_movimientos.html">Tipos de Movimientos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/unidades.html">Unidades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_conceptos.html">Tipos de Conceptos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_costos.html">Tipos de Costos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_actividades.html">Tipos de Actividades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_motivos.html">Tipos de Motivos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/socios.html">Socios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/raza.html">Raza</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/secado.html">Secado</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/partos.html">Partos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/monedas.html">Monedas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/cotizaciones.html">Cotizaciones</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/modulos.html">Modulos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/lluvias.html">Lluvias </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/liquida.html">Liquida</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/suelo_analisis.html">Suelo Analisis</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <div class="row justify-content-md-between align-items-md-center mb-10">
+        <div class="col-md-6 col-xl-5">
+          <div class="mb-4">
+            <h1 class="mb-3" style="font-size: 3rem;">Ingreacion <span class="text-primary text-highlight-warning">Atila
+                Apis</span> con clientes.</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sit minima quo, aspernatur
+              molestias sint architecto repellat iure vitae non facere aliquam consectetur, dolorum excepturi
+              perspiciatis tempora eligendi. Beatae, praesentium..</p>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <!-- Card -->
+            <div class="card card-sm card-borderless bg-soft-secondary text-center rounded" style="min-width: 8rem;">
+              <div class="card-body">
+                <h2 class="h1 fw-normal mb-1">41</h2>
+                <span class="small text-cap mb-0">CRUDS</span>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="card card-sm card-borderless bg-soft-secondary text-center rounded" style="min-width: 8rem;">
+              <div class="card-body">
+                <h2 class="h1 fw-normal mb-1">150</h2>
+                <span class="small text-cap mb-0">EndPoints</span>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <!-- <div class="card card-sm card-borderless bg-soft-secondary text-center rounded" style="min-width: 8rem;">
+              <div class="card-body">
+                <h2 class="h1 fw-normal mb-1">500+</h2>
+                <span class="small text-cap mb-0">Combinations</span>
+              </div>
+            </div> -->
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6 col-xl-6">
+          <img class="img-fluid" src="../assets/svg/illustrations/oc-project-development.svg" alt="Image Description">
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+
+      <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/list.js/dist/list.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Unify -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch');
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+
+</html>

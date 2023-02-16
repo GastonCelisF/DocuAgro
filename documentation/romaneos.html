@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title> Romaneos - CRUD</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+  <link rel="stylesheet" href="../assets/css/docs.min.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="../documentation/index.html" aria-label="Unify">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="../documentation/changelog.html">
+              <span class="badge bg-soft-primary text-primary">v3.2.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group-merge navbar-input-group" style="min-width: 20rem;">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control" placeholder="Search in docs"
+                      aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description"
+                        style="width: 7rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block text-muted mb-1"></span>
+                      <span class="component fw-bold text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end"
+      data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <div class="d-grid flex-grow-1 px-2">
+        <button type="button" class="navbar-toggler btn btn-white" data-bs-toggle="collapse"
+          data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false"
+          aria-controls="navbarVerticalNavMenu">
+          <span class="d-flex justify-content-between align-items-center">
+            <span class="h3 mb-0">Nav menu</span>
+
+            <span class="navbar-toggler-default">
+              <i class="bi-list"></i>
+            </span>
+
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </span>
+        </button>
+      </div>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="../documentation/index.html" aria-label="Unify">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="../documentation/changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v3.2.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+
+        </div>
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="../documentation/introduccion.html">Introduction</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/getting_started.html">Getting Started</a>
+            </li>
+            <li class="nav-item my-2 my-lg-5"></li>
+            
+            <li class="nav-item">
+              <span class="nav-subtitle">CRUDS</span>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/establecimientos.html">Establecimientos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/animales.html">Animales</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/lotes.html">Lotes</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/mov_laborales.html">Movimientos Laborales</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/ingreso_animal.html">Aniamles Ingresos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/insumo_data.html">Insumo Data</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/operario.html">Operario</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/hacienda.html">Hacienda</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/labor.html">Labor</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/maquinas.html">Maquinas</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_combustibles.html">Movimientos Combustibles</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/actividades.html">Actividades</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/plan_de_gestion.html">Plan de Gestion</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/act_lotes.html">ActLotes</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_insumos.html">Movimientos Insumos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/movimientos_equipos.html">Movimientos Equipos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/contrato_cereal.html">Contrato Cereal</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dta.html">DTA</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dta_haciendas.html">DTA Haciendas</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/viajes.html">Viajes</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/viajes_movimientos.html">Viajes Movimientos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/romaneos.html">Romaneos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/depositos.html">Depositos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/depositos_mov_transferencia.html">Deposito Mov. Transferencia</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/rubro.html">Rubro</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_movimientos.html">Tipos de Movimientos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/unidades.html">Unidades</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_conceptos.html">Tipos de Conceptos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_costos.html">Tipos de Costos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_actividades.html">Tipos de Actividades</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tipos_de_motivos.html">Tipos de Motivos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/socios.html">Socios</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/raza.html">Raza</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/secado.html">Secado</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/partos.html">Partos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/monedas.html">Monedas</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/cotizaciones.html">Cotizaciones</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/modulos.html">Modulos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/lluvias.html">Lluvias </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/liquida.html">Liquida</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/suelo_analisis.html">Suelo Analisis</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Romaneos</h1>
+            <p class="docs-page-header-text">A continuacion estaran todas las Acciones Disponibles.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- GET -->
+
+      <!-- Heading -->
+      <h2 id="button-types" class="hs-docs-heading">
+        <span class="text-primary text-highlight-warning">GET</span>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Retorna todos los Romaneos existentes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">Response</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <pre>
+          <code class="language-markup" data-lang="html">>[
+          {
+          "id": 1,
+          "cuenta": "000042",
+          "periodo_fecha": "31/12/2022 12:00:00 a.m.",
+          "sucursal_romaneo": "1",
+          "numero_romaneo": "1",
+          "entrada_salida": "E",
+          "sucursal_remito": "1",
+          "numero_remito": "1",
+          "codigo": "97",
+          "cocecha": "0",
+          "nro_deposito": "0",
+          "procedencia": "",
+          "detalle": "",
+          "proveedor": "000033",
+          "conductor": "CONDUCOTR",
+          "destinatario": "",
+          "kg_entrada": "30000",
+          "kg_salida": "20000",
+          "sucursal_carta_porte": "1",
+          "numero_carta_porte": "1",
+          "kg_brutos": "10000",
+          "por_humedad": "0,00",
+          "indice_humedad": "1,00",
+          "kg_humedad": "100",
+          "por_zarandeo": "2,00",
+          "kg_zarandeo": "200",
+          "por_descarte": "3,00",
+          "kg_descarte": "300",
+          "por_volatil": "4,00",
+          "kg_volatil": "400",
+          "kg_envase": "100",
+          "por_rendimineto": "1000",
+          "kg_rendimiento": null,
+          "kg_netos": "7900",
+          "establecimiento": "",
+          "kilos": "",
+          "kilos_2": "",
+          "kilos_3": "",
+          "lote": "",
+          "lote_2": "",
+          "lote_3": "",
+          "actividad": "",
+          "deposito": "1",
+          "sucursal_certificado": "0",
+          "numero_certificado": "0",
+          "kg_certificado": "0",
+          "sucursal_certificado_1": "0",
+          "numero_certificado_1": "0",
+          "kg_certificado_1": "0",
+          "valor_mercado": "0,00",
+          "estado": "",
+          "historico": ""
+          }
+          ]</code>
+          </pre>
+          </div>
+
+
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- FIN DE  GET -->
+
+
+      <!-- COMIENZO GET DATA -->
+      <!-- Heading -->
+      <h2 id="button-types" class="hs-docs-heading">
+        <span class="text-primary text-highlight-warning">GET</span>{id}
+      </h2>
+      <!-- End Heading -->
+      <p>Retorna todos un Romaneo segun su ID.</p>
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="nav-getdataresponse" href="#nav-getdataresponse" data-bs-toggle="pill"
+                data-bs-target="#nav-html1" role="tab" aria-controls="nav-getdataresponse"
+                aria-selected="false">Response</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <pre>
+                          <code class="language-markup" data-lang="html">{
+                          "id": 1,
+                          "cuenta": "000042",
+                          "periodo_fecha": "31/12/2022 12:00:00 a.m.",
+                          "sucursal_romaneo": "1",
+                          "numero_romaneo": "1",
+                          "entrada_salida": "E",
+                          "sucursal_remito": "1",
+                          "numero_remito": "1",
+                          "codigo": "97",
+                          "cocecha": "0",
+                          "nro_deposito": "0",
+                          "procedencia": "",
+                          "detalle": "",
+                          "proveedor": "000033",
+                          "conductor": "CONDUCOTR",
+                          "destinatario": "",
+                          "kg_entrada": "30000",
+                          "kg_salida": "20000",
+                          "sucursal_carta_porte": "1",
+                          "numero_carta_porte": "1",
+                          "kg_brutos": "10000",
+                          "por_humedad": "0,00",
+                          "indice_humedad": "1,00",
+                          "kg_humedad": "100",
+                          "por_zarandeo": "2,00",
+                          "kg_zarandeo": "200",
+                          "por_descarte": "3,00",
+                          "kg_descarte": "300",
+                          "por_volatil": "4,00",
+                          "kg_volatil": "400",
+                          "kg_envase": "100",
+                          "por_rendimineto": "1000",
+                          "kg_rendimiento": null,
+                          "kg_netos": "7900",
+                          "establecimiento": "",
+                          "kilos": "",
+                          "kilos_2": "",
+                          "kilos_3": "",
+                          "lote": "",
+                          "lote_2": "",
+                          "lote_3": "",
+                          "actividad": "",
+                          "deposito": "1",
+                          "sucursal_certificado": "0",
+                          "numero_certificado": "0",
+                          "kg_certificado": "0",
+                          "sucursal_certificado_1": "0",
+                          "numero_certificado_1": "0",
+                          "kg_certificado_1": "0",
+                          "valor_mercado": "0,00",
+                          "estado": "",
+                          "historico": ""
+                          }</code>
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+              <!-- End Card -->
+              <!-- FIN GET DATA -->
+
+                <!-- COMIENZO DE POST -->
+                <!-- Heading -->
+                <h2 id="button-types" class="hs-docs-heading">
+                  <span class="text-primary text-highlight-warning">POST</span>
+                </h2>
+                <!-- End Heading -->
+                <p>Inserta un nuevo Romaneo.</p>
+                <!-- Card -->
+                <div class="card">
+                  <!-- Header -->
+                  <div class="card-header">
+                    <!-- Nav -->
+                    <ul class="nav nav-segment" id="navTab1" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="nav-post1" href="#nav-result2" data-bs-toggle="pill"
+                          data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Request</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav-post2" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                          role="tab" aria-controls="nav-html1" aria-selected="false">Response</a>
+                      </li>
+                    </ul>
+                    <!-- End Nav -->
+                  </div>
+                  <!-- End Header -->
+                
+                  <!-- Tab Content -->
+                  <div class="tab-content" id="navTabContent1">
+                    <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-post2">
+                      <pre>
+                                        <code class="language-markup" data-lang="html">{
+                                        "cuenta":"000043",
+                                        "periodo_fecha":"31/12/2022 12:00:00 a.m.",
+                                        "sucursal_romaneo":"1",
+                                        "numero_romaneo":"1",
+                                        "entrada_salida":"E",
+                                        "sucursal_remito":"1",
+                                        "numero_remito":"2",
+                                        "codigo":"97",
+                                        "cocecha":"0",
+                                        "nro_deposito":"0",
+                                        "procedencia":"",
+                                        "deposito":"",
+                                        "proveedor":"000033",
+                                        "conductor":"CONDUCOTR",
+                                        "destinatario":"",
+                                        "valor_mercado":"0",
+                                        "kg_entrada":"30000",
+                                        "kg_salida":"20000",
+                                        "sucursal_carta_porte":"1",
+                                        "numero_carta_porte":"1",
+                                        "kg_brutos":"10000",
+                                        "por_humedad":"0",
+                                        "indice_humedad":"1",
+                                        "kg_humedad":"15",
+                                        "por_zarandeo":"2",
+                                        "kg_zarandeo":"4",
+                                        "por_descarte":"3",
+                                        "kg_descarte":"300",
+                                        "por_volatil":"4",
+                                        "kg_volatil":"423",
+                                        "kg_envase":"111",
+                                        "por_rendimineto":"10",
+                                        "kg_rendimiento":"1000",
+                                        "kg_netos":"7900",
+                                        "deposito":"1",
+                                        "sucursal_certificado":"0",
+                                        "numero_certificado":"0",
+                                        "kg_certificado":"0",
+                                        "sucursal_certificado_1":"0",
+                                        "numero_certificado_1":"0",
+                                        "kg_certificado_1":"0",
+                                        "usuario":"4"
+                                        }</code>
+                                        </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+                                            <code class="language-markup" data-lang="html">{
+                                            "VALIDO": "S",
+                                            "MENSAJE": "Romaneo Agregado correctamente.",
+                                            "VALOR": "4"
+                                            }</code>
+                                          </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+      <!-- FIN DE POST -->
+
+      <!-- COMIENZO DE PUT -->
+      <!-- Heading -->
+      <h2 id="button-types" class="hs-docs-heading">
+        <span class="text-primary text-highlight-warning">PUT</span>
+      </h2>
+      <!-- End Heading -->
+      <p>Actualiza un Romaneo.</p>
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-post3" href="#nav-result3" data-bs-toggle="pill"
+                data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-post3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3"
+                role="tab" aria-controls="nav-html1" aria-selected="false">Response</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-post3">
+            <pre>
+                                        <code class="language-markup" data-lang="html">{
+                                        "id":"4",
+                                        "sucursal_romaneo":"1",
+                                        "numero_romaneo":"1",
+                                        "sucursal_remito":"1",
+                                        "numero_remito":"2",
+                                        "codigo":"97",
+                                        "cocecha":"0",
+                                        "detalle":"",
+                                        "nro_deposito":"0",
+                                        "procedencia":"",
+                                        "deposito":"",
+                                        "destinatario":"",
+                                        "valor_mercado":"0",
+                                        "kg_entrada":"30000",
+                                        "kg_salida":"20000",
+                                        "sucursal_carta_porte":"1",
+                                        "numero_carta_porte":"1",
+                                        "kg_brutos":"10000",
+                                        "por_humedad":"0",
+                                        "indice_humedad":"1",
+                                        "kg_humedad":"15",
+                                        "por_zarandeo":"2",
+                                        "kg_zarandeo":"4",
+                                        "por_descarte":"3",
+                                        "kg_descarte":"301",
+                                        "por_volatil":"4",
+                                        "kg_volatil":"423",
+                                        "kg_envase":"111",
+                                        "por_rendimineto":"10",
+                                        "kg_rendimiento":"1000",
+                                        "kg_netos":"7900",
+                                        "deposito":"1",
+                                        "sucursal_certificado":"0",
+                                        "numero_certificado":"0",
+                                        "kg_certificado":"0",
+                                        "sucursal_certificado_1":"0",
+                                        "numero_certificado_1":"0",
+                                        "kg_certificado_1":"0",
+                                        "usuario":"4"
+                                        }</code>
+                                        </pre>
+          </div>
+      
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+                                            <code class="language-markup" data-lang="html">{
+                                            "VALIDO": "S",
+                                            "MENSAJE": "Romaneo Actualizado correctamente.",
+                                            "VALOR": "4"
+                                            }</code>
+                                          </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+        <!-- FIN DE PUT -->
+
+
+      <!-- COMIENZO DE DELETE -->
+      <!-- Heading -->
+      <h2 id="button-types" class="hs-docs-heading">
+        <span class="text-primary text-highlight-warning">DELETE</span>
+      </h2>
+      <!-- End Heading -->
+      <p>Elimina un Romaneo segun su ID.</p>
+      <div class="card-header">
+        <!-- Nav -->
+        <ul class="nav nav-segment" id="navTab4" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="nav-post4" href="#nav-result3" data-bs-toggle="pill"
+              data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-post4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4"
+              role="tab" aria-controls="nav-html4" aria-selected="false">Response</a>
+          </li>
+        </ul>
+        <!-- End Nav -->
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-post4">
+            <pre>
+                                                      <code class="language-markup" data-lang="html">{
+                                                      "id":"",
+                                                      "usuario":""
+                                                      }</code>
+                                                      </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+                                                          <code class="language-markup" data-lang="html">{
+                                                          "VALIDO": "S",
+                                                          "MENSAJE": "Romaneo eliminado correctamente.",
+                                                          "VALOR": "4"
+                                                          }</code>
+                                                        </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- FIN DE DELETE -->
+
+
+    </div>
+
+
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="../assets/vendor/list.js/dist/list.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Unify -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch');
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+
+</html>
