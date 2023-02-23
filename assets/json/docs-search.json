@@ -1,27 +1,27 @@
 [
   {
     "component": "Establecimientos",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./Establecimientos.html"
   },
   {
     "component": "Animales",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./animales.html"
   },
   {
     "component": "Lotes",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./lotes.html"
   },
   {
     "component": "Movimientos Laborales",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "mov_laborales.html"
   },
   {
     "component": "Animales Ingresos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./ingreso_animal.html"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "component": "Insumo Data",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./insumo_data.html"
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "component": "Operario",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./operario.html"
   },
   {
@@ -51,162 +51,157 @@
   },
   {
     "component": "Labor",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./labor.html"
   },
   {
     "component": "Maquinas",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./maquinas.html"
   },
   {
     "component": "Movimientos Combustibles",
-    "category": "Components",
+    "category": "NOVEDADES",
     "link": "./movimientos_combustibles.html"
   },
   {
     "component": "Actividades",
-    "category": "Components",
+    "category": "MAESTROS",
     "link": "./actividades.html"
   },
   {
     "component": "Plan de Gestion",
-    "category": "CRUDS",
+    "category": "MAESTROS",
     "link": "./plan_de_gestion.html"
   },
   {
     "component": "Actividades Lotes",
-    "category": "Components",
+    "category": "MAESTROS",
     "link": "./act_lotes.html"
   },
   {
     "component": "Movimientos Insumos",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./movimientos_insumos.html"
   },
   {
     "component": "Movimientos Equipos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./movimientos_equipos.html"
   },
   {
     "component": "Contrato Cereal",
-    "category": "Components",
+    "category": "NOVEDADES",
     "link": "./contrato_cereal.html"
   },
   {
     "component": "DTA",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./dta.html"
   },
   {
     "component": "DTA Haciendas",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./dta_haciendas.html"
   },
   {
     "component": "Viajes",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./viajes.html"
   },
   {
     "component": "Viajes Movimientos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./viajes_movimientos.html"
   },
   {
-    "component": "Offcanvas",
-    "category": "Components",
-    "link": "./offcanvas.html"
-  },
-  {
     "component": "Romaneos",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./romaneos.html"
   },
   {
     "component": "Depositos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./depositos.html"
   },
   {
     "component": "Depositos Movimientos Transferencias",
-    "category": "CRUDS",
+    "category": "NOVEDADES",
     "link": "./depositos_mov_transferencia.html"
   },
   {
     "component": "Rubro",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./rubro.html"
   },
   {
     "component": "Tipos de Movimientos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./tipos_de_movimientos.html"
   },
   {
     "component": "Unidades",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./unidades.html"
   },
   {
     "component": "Tipos de Conceptos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./tipos_de_conceptos.html"
   },
   {
     "component": "Tipos de Costos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./tipos_de_costos.html"
   },
   {
     "component": "Tipos de Actividades",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./tipos_de_actividades.html"
   },
   {
     "component": "Tipos de Motivos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./tipos_de_motivos.html"
   },
   {
     "component": "Socios",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./socios.html"
   },
   {
     "component": "Raza",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./raza.html"
   },
   {
     "component": "Secados",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./secado.html"
   },
   {
     "component": "Partos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./partos.html"
   },
   {
     "component": "Monedas",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./monedas.html"
   },
   {
     "component": "Cotizaciones",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./cotizaciones.html"
   },
   {
     "component": "Modulos",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./modulos.html"
   },
   {
     "component": "Lluvias",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./lluvias.html"
   },
   {
@@ -216,12 +211,12 @@
   },
   {
     "component": "Liquidaciones",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./liquida.html"
   },
   {
     "component": "Suelo Analisis",
-    "category": "CRUDS",
+    "category": "TABLAS",
     "link": "./suelo_analisis.html"
   }
 ]
