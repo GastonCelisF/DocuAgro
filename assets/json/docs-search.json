@@ -5,24 +5,24 @@
     "link": "./Establecimientos.html"
   },
   {
-    "component": "Introduction",
-    "category": "DOCUMENTATION",
-    "link": "./gulp.html"
+    "component": "Animales",
+    "category": "CRUDS",
+    "link": "./animales.html"
   },
   {
-    "component": "Getting Started",
-    "category": "DOCUMENTATION",
-    "link": "./customization.html"
+    "component": "Lotes",
+    "category": "CRUDS",
+    "link": "./lotes.html"
   },
   {
-    "component": "Credits",
-    "category": "Getting Started",
-    "link": "./credits.html"
+    "component": "Movimientos Laborales",
+    "category": "CRUDS",
+    "link": "mov_laborales.html"
   },
   {
-    "component": "Changelog",
-    "category": "Getting Started",
-    "link": "./changelog.html"
+    "component": "Animales Ingresos",
+    "category": "CRUDS",
+    "link": "./ingreso_animal.html"
   },
   {
     "component": "Typography",
@@ -30,9 +30,9 @@
     "link": "./typography.html"
   },
   {
-    "component": "Bootstrap Icons",
-    "category": "Content",
-    "link": "./bootstrap-icons.html"
+    "component": "Insumo Data",
+    "category": "CRUDS",
+    "link": "./insumo_data.html"
   },
   {
     "component": "Accordion",
@@ -40,79 +40,79 @@
     "link": "./accordion.html"
   },
   {
-    "component": "Alerts",
-    "category": "Components",
-    "link": "./alerts.html"
+    "component": "Operario",
+    "category": "CRUDS",
+    "link": "./operario.html"
   },
   {
-    "component": "Avatars",
+    "component": "Hacienda",
     "category": "Components",
-    "link": "./avatars.html"
+    "link": "./hacienda.html"
   },
   {
-    "component": "Badge",
-    "category": "Components",
-    "link": "./badge.html"
+    "component": "Labor",
+    "category": "CRUDS",
+    "link": "./labor.html"
   },
   {
-    "component": "Banners",
-    "category": "Components",
-    "link": "./banners.html"
+    "component": "Maquinas",
+    "category": "CRUDS",
+    "link": "./maquinas.html"
   },
   {
-    "component": "Breadcrumb",
+    "component": "Movimientos Combustibles",
     "category": "Components",
-    "link": "./breadcrumb.html"
+    "link": "./movimientos_combustibles.html"
   },
   {
-    "component": "Buttons",
+    "component": "Actividades",
     "category": "Components",
-    "link": "./buttons.html"
+    "link": "./actividades.html"
   },
   {
-    "component": "Cards",
-    "category": "Components",
-    "link": "./cards.html"
+    "component": "Plan de Gestion",
+    "category": "CRUDS",
+    "link": "./plan_de_gestion.html"
   },
   {
-    "component": "Collapse",
+    "component": "Actividades Lotes",
     "category": "Components",
-    "link": "./collapse.html"
+    "link": "./act_lotes.html"
   },
   {
-    "component": "Column divider",
-    "category": "Components",
-    "link": "./column-divider.html"
+    "component": "Movimientos Insumos",
+    "category": "CRUDS",
+    "link": "./movimientos_insumos.html"
   },
   {
-    "component": "Devices",
-    "category": "Components",
-    "link": "./devices.html"
+    "component": "Movimientos Equipos",
+    "category": "CRUDS",
+    "link": "./movimientos_equipos.html"
   },
   {
-    "component": "Divider",
+    "component": "Contrato Cereal",
     "category": "Components",
-    "link": "./divider.html"
+    "link": "./contrato_cereal.html"
   },
   {
-    "component": "Dropdowns",
-    "category": "Components",
-    "link": "./dropdowns.html"
+    "component": "DTA",
+    "category": "CRUDS",
+    "link": "./dta.html"
   },
   {
-    "component": "List Group",
-    "category": "Components",
-    "link": "./list-group.html"
+    "component": "DTA Haciendas",
+    "category": "CRUDS",
+    "link": "./dta_haciendas.html"
   },
   {
-    "component": "Lists",
-    "category": "Components",
-    "link": "./lists.html"
+    "component": "Viajes",
+    "category": "CRUDS",
+    "link": "./viajes.html"
   },
   {
-    "component": "Modal",
-    "category": "Components",
-    "link": "./modal.html"
+    "component": "Viajes Movimientos",
+    "category": "CRUDS",
+    "link": "./viajes_movimientos.html"
   },
   {
     "component": "Offcanvas",
@@ -120,94 +120,94 @@
     "link": "./offcanvas.html"
   },
   {
-    "component": "Pagination",
-    "category": "Components",
-    "link": "./pagination.html"
+    "component": "Romaneos",
+    "category": "CRUDS",
+    "link": "./romaneos.html"
   },
   {
-    "component": "Popovers",
-    "category": "Components",
-    "link": "./popovers.html"
+    "component": "Depositos",
+    "category": "CRUDS",
+    "link": "./depositos.html"
   },
   {
-    "component": "Progress",
-    "category": "Components",
-    "link": "./progress.html"
+    "component": "Depositos Movimientos Transferencias",
+    "category": "CRUDS",
+    "link": "./depositos_mov_transferencia.html"
   },
   {
-    "component": "Shapes",
-    "category": "Components",
-    "link": "./shapes.html"
+    "component": "Rubro",
+    "category": "CRUDS",
+    "link": "./rubro.html"
   },
   {
-    "component": "Sliding Image",
-    "category": "Components",
-    "link": "./sliding-img.html"
+    "component": "Tipos de Movimientos",
+    "category": "CRUDS",
+    "link": "./tipos_de_movimientos.html"
   },
   {
-    "component": "Spinners",
-    "category": "Components",
-    "link": "./spinners.html"
+    "component": "Unidades",
+    "category": "CRUDS",
+    "link": "./unidades.html"
   },
   {
-    "component": "Steps",
-    "category": "Components",
-    "link": "./steps.html"
+    "component": "Tipos de Conceptos",
+    "category": "CRUDS",
+    "link": "./tipos_de_conceptos.html"
   },
   {
-    "component": "Tab",
-    "category": "Components",
-    "link": "./tab.html"
+    "component": "Tipos de Costos",
+    "category": "CRUDS",
+    "link": "./tipos_de_costos.html"
   },
   {
-    "component": "Tables",
-    "category": "Components",
-    "link": "./tables.html"
+    "component": "Tipos de Actividades",
+    "category": "CRUDS",
+    "link": "./tipos_de_actividades.html"
   },
   {
-    "component": "Toasts",
-    "category": "Components",
-    "link": "./toasts.html"
+    "component": "Tipos de Motivos",
+    "category": "CRUDS",
+    "link": "./tipos_de_motivos.html"
   },
   {
-    "component": "Tooltips",
-    "category": "Components",
-    "link": "./tooltips.html"
+    "component": "Socios",
+    "category": "CRUDS",
+    "link": "./socios.html"
   },
   {
-    "component": "Navbar",
-    "category": "Navbars",
-    "link": "./navbar.html"
+    "component": "Raza",
+    "category": "CRUDS",
+    "link": "./raza.html"
   },
   {
-    "component": "Navs",
-    "category": "Navbars",
-    "link": "./navs.html"
+    "component": "Secados",
+    "category": "CRUDS",
+    "link": "./secado.html"
   },
   {
-    "component": "Mega Menu",
-    "category": "Navbars",
-    "link": "./mega-menu.html"
+    "component": "Partos",
+    "category": "CRUDS",
+    "link": "./partos.html"
   },
   {
-    "component": "Scrollspy",
-    "category": "Navbars",
-    "link": "./scrollspy.html"
+    "component": "Monedas",
+    "category": "CRUDS",
+    "link": "./monedas.html"
   },
   {
-    "component": "Basic forms",
-    "category": "Basic forms",
-    "link": "./basic-forms.html"
+    "component": "Cotizaciones",
+    "category": "CRUDS",
+    "link": "./cotizaciones.html"
   },
   {
-    "component": "Checks and switches",
-    "category": "Basic forms",
-    "link": "./checks-and-switches.html"
+    "component": "Modulos",
+    "category": "CRUDS",
+    "link": "./modulos.html"
   },
   {
-    "component": "Input group",
-    "category": "Basic forms",
-    "link": "./input-group.html"
+    "component": "Lluvias",
+    "category": "CRUDS",
+    "link": "./lluvias.html"
   },
   {
     "component": "Backgrounds",
@@ -215,78 +215,13 @@
     "link": "./backgrounds.html"
   },
   {
-    "component": "Borders",
-    "category": "Utilities",
-    "link": "./borders.html"
+    "component": "Liquidaciones",
+    "category": "CRUDS",
+    "link": "./liquida.html"
   },
   {
-    "component": "Colors",
-    "category": "Utilities",
-    "link": "./colors.html"
-  },
-  {
-    "component": "Colored links",
-    "category": "Utilities",
-    "link": "./links.html"
-  },
-  {
-    "component": "Links",
-    "category": "Utilities",
-    "link": "./links.html"
-  },
-  {
-    "component": "Position",
-    "category": "Utilities",
-    "link": "./position.html"
-  },
-  {
-    "component": "Shadows",
-    "category": "Utilities",
-    "link": "./shadows.html"
-  },
-  {
-    "component": "Sizing",
-    "category": "Utilities",
-    "link": "./sizing.html"
-  },
-  {
-    "component": "Spacing",
-    "category": "Utilities",
-    "link": "./spacing.html"
-  },
-  {
-    "component": "Z-index",
-    "category": "Utilities",
-    "link": "./z-index.html"
-  },
-  {
-    "component": "Fullscreen Lightbox",
-    "category": "Media",
-    "link": "./fslightbox.html"
-  },
-  {
-    "component": "Swiper",
-    "category": "Media",
-    "link": "./swiper.html"
-  },
-  {
-    "component": "Sticky block",
-    "category": "Others",
-    "link": "./sticky-block.html"
-  },
-  {
-    "component": "Countdown",
-    "category": "Others",
-    "link": "./countdown.html"
-  },
-  {
-    "component": "Video Background",
-    "category": "Others",
-    "link": "./video-bg.html"
-  },
-  {
-    "component": "Go To",
-    "category": "Others",
-    "link": "./go-to.html"
+    "component": "Suelo Analisis",
+    "category": "CRUDS",
+    "link": "./suelo_analisis.html"
   }
 ]

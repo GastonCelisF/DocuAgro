@@ -5,9 +5,9 @@
     "link": "./Eestablecimientos.html"
   },
   {
-    "component": "Navbar",
-    "category": "Navbar / Hero Sections",
-    "link": "./navbar-default.html"
+    "component": "Animales",
+    "category": "CRUDS",
+    "link": "./animales.html"
   },
   {
     "component": "Bootstrap only Dropdowns",
